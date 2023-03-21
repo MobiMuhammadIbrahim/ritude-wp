@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'RaysCafeSolidW00';
+    src: url('RaysCafeSolidW00-Regular.eot');
+    src: url('RaysCafeSolidW00-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RaysCafeSolidW00-Regular.woff2') format('woff2'),
+        url('RaysCafeSolidW00-Regular.woff') format('woff'),
+        url('RaysCafeSolidW00-Regular.ttf') format('truetype'),
+        url('RaysCafeSolidW00-Regular.svg#RaysCafeSolidW00-Regular') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RaysCafeSolidW00';
+    src: url('RaysCafeSolidW00-Regular_1.eot');
+    src: url('RaysCafeSolidW00-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('RaysCafeSolidW00-Regular_1.woff2') format('woff2'),
+        url('RaysCafeSolidW00-Regular_1.woff') format('woff'),
+        url('RaysCafeSolidW00-Regular_1.ttf') format('truetype'),
+        url('RaysCafeSolidW00-Regular_1.svg#RaysCafeSolidW00-Regular') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Trajan Pro';
+    src: url('TrajanPro-Bold.eot');
+    src: url('TrajanPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TrajanPro-Bold.woff2') format('woff2'),
+        url('TrajanPro-Bold.woff') format('woff'),
+        url('TrajanPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trajan Pro';
+    src: url('TrajanPro-Regular.eot');
+    src: url('TrajanPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TrajanPro-Regular.woff2') format('woff2'),
+        url('TrajanPro-Regular.woff') format('woff'),
+        url('TrajanPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

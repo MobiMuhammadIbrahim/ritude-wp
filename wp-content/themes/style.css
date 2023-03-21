@@ -1,0 +1,376 @@
+/*
+Theme Name: Ewebot - Child
+Author: Mobitisinginc
+Author URI: https://mobitisinginc.com/
+Description: -
+Version: 1.0
+Template: ewebot
+*/
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(fonts/Raleway-Regular.ttf);
+}
+/*susbscribe new field with wp-forms in newsletter style start*/
+.footer_subscribe_filed_new .wpforms-field input {
+    border-radius: 23px !important;
+    width: 100% !important;
+    height: 50px !important;
+    display: block !important;
+    border: 1px !important;
+    border-color: #ddd !important;
+    background-color: #f4f4f4 !important;
+    background-image: none !important;
+    text-shadow: none !important;
+    color: #444 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin: 0 !important;
+    padding: 15px !important;
+}
+.footer_subscribe_filed_new .wpforms-field, .footer_subscribe_filed_new .wpforms-submit-container {
+    padding: 0px;
+}
+.footer_subscribe_filed_new div#wpforms-11715-field_2-container {
+    display: none;
+}
+.footer_subscribe_filed_new .wpforms-submit-container button {
+    border-radius: 26px !important;
+    width: 100% !important;
+    padding: 15px 10px !important;
+    color: white !important;
+    border: 0px !important;
+    text-transform: uppercase !important;
+    font-size: 14px !important;
+    letter-spacing: .2px !important;
+    font-weight: 400 !important;
+    background-image: linear-gradient(96deg, #9289f1 0%,#6254e7 51%, #9289f1 100%) !important;
+    background-size: 150% 100% !important;
+    transition: all .3s;
+    cursor: pointer;
+    line-height: 23px;
+}
+.footer_subscribe_filed_new .wpforms-submit-container button:hover {
+    background-position: 100% 150%;
+    transition: all .4s ease-in-out;
+}
+.footer_subscribe_filed_new form {
+    margin: 15px auto;
+    max-width: 500px;
+    width: 100%;
+}
+.faq_page_Section span.gt3_dropcaps {
+	font-family: Raleway-Regular !important;
+}
+.faq_page_Section .elementor-toggle-item .add_question_marker:before {
+    font-family: Raleway-Regular !important;   
+}
+@import url("../ewebot/style.css");
+.footer_subscribe .tnp-subscription input.tnp-submit {
+    background-image: linear-gradient(96deg, #9289f1 0%,#6254e7 51%, #9289f1 100%) !important;
+    border-radius: 26px;
+    width: 100% !important;
+    padding: 18px 10px !important;
+}
+.footer_subscribe .tnp-subscription input#tnp-1 {
+    border-radius: 23px;
+}
+.footer_subscribe .tnp-field label {
+    display: none;
+}
+.why_us_product_Sec img.attachment-full {
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+}
+/*.get_started_form_page .frm_form_field label {
+    display: none !important;
+}*/ 
+/*.get_started_form_page .with_frm_style {
+    box-shadow: none !important;
+}*/
+/*.get_started_form_page fieldset {
+    border: 0px !important;
+    padding: 0px !important;
+}*/
+.get_started_form_page .wpforms-field input, .get_started_form_page .wpforms-field textarea {
+    color: #696687 !important;
+    border: 0px !important;
+    font-size: .78em !important;
+    line-height: 1.5 !important;
+    border-bottom: 1px solid rgba(98,84,231, 0.3) !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    font-weight: 400;
+    padding: 8px 0 !important;
+    transition: all .3s;
+    background: rgba(0,0,0,0) !important;
+}
+/*.get_started_form_page div.frm_error, .get_started_form_page .frm_error_style {
+    color: red !important;
+    font-size: 14px !important;
+}*/
+.get_started_form_page .wpforms-field-container input {
+	height: 41px !important;	
+}
+.get_started_form_page .wpforms-field-container textarea {
+	height: 111px !important;
+	    padding-top: 10px;
+    	margin-bottom: 32px !important;	
+}
+.get_started_form_page .wpforms-submit-container button {
+    background-image: linear-gradient(96deg, #9289f1 0%,#6254e7 51%, #9289f1 100%) !important;
+    background-size: 150% 100% !important;
+    transition: all .3s;
+    height: 50px !important;
+    cursor: pointer;
+    padding: 10px 30px !important;
+    line-height: 23px;
+    margin: 0 0 15px !important;
+    font-size: 14px !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    border: none !important;
+    color: #fff !important;
+    border-radius: 5px;
+}
+.get_started_form_page .wpforms-submit-container button:hover {
+    background-position: 100% 150%;
+    transition: all .4s ease-in-out;
+}
+.page-id-719 .gt3-page-title_has_img_bg {
+    margin-bottom: 0px !important;
+}
+.our_product_sec_home img.attachment-large {
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+    border-radius: 11px;
+}
+#back_to_top.show:hover {
+	background: red !important;
+}
+a#back_to_top {
+    border-color: red !important;
+}
+#back_to_top:before {
+	color: red;
+}
+#back_to_top:hover:before {
+    color: white;
+}
+.cloud_animated_bottom:before {
+	background-image: url(https://mobitisinginc.com/wp-content/uploads/2022/03/bg-animated.png) !important;
+}
+
+section.career-sec-one .col-1-text p a {
+    background-image: linear-gradient(96deg, #9289f1 0%,#6254e7 51%, #9289f1 100%) !important;
+    border-radius: 26px;
+    width: 100% !important;
+    padding: 18px 15px !important;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    background-size: 150% 100%;
+    transition: all .4s ease-in-out;
+    display: block;
+    width: 45% !important;
+    text-align: center;
+}
+section.career-sec-one .col-1-text p a:hover {
+    background-position: 100% 150%;
+    transition: all .4s ease-in-out;
+}
+section.privacy_page_text_sec p, section.privacy_page_text_sec li {
+    font-size: 18px !important;
+    font-weight: normal !important;
+    color: inherit !important;
+}
+section.termsCondtion_page_text_sec p, section.termsCondtion_page_text_sec li {
+    font-size: 18px !important;
+    font-weight: normal !important;
+    color: inherit !important;
+}
+/* home page style images loop section  */
+.images_loop_sec {
+    margin: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+}
+.images_loop_sec .inner_box {
+    width: 32%;
+    margin: 7px;
+}
+.images_loop_sec .inner_box > div {
+    height: 100%;
+}
+
+.images_loop_sec a {
+    position: relative !important;
+    display: block;
+}
+.images_loop_sec .inner_box a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.images_loop_sec .caption {
+    position: absolute;
+    padding: 25px;
+    color: #fff;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+.images_loop_sec .caption h3, .images_loop_sec .caption h2 {
+    color: white;
+}
+.images_loop_sec .caption h3 {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+.images_loop_sec .caption h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0.2rem;
+    line-height: initial;
+}
+.images_loop_sec .inner_box_btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+}
+.images_loop_sec .inner_box_btn button {
+    color: white;
+}
+.images_loop_sec .inner_box {
+    display: none;
+}
+.footer_contact_info1 ul li {
+    list-style: none;
+    
+}
+/*services -> sub-menu inner -> sub-menu style start*/
+.responsive-img-hide img {
+    display: none !important;
+}
+@media(max-width: 480px) {
+    section.privacy_page_text_sec p, section.privacy_page_text_sec li {
+        font-size: 14px !important;
+    }
+    section.termsCondtion_page_text_sec p, section.termsCondtion_page_text_sec li {
+        font-size: 14px !important;
+    }
+}
+
+@media(max-width: 599px) { 
+    .images_loop_sec .inner_box {
+        width: 100%;
+        margin: 10px;
+    }
+    .images_loop_sec .caption {
+        padding: 20px;
+    }
+    .images_loop_sec .caption h3 {
+        font-size: 14px;
+        line-height: initial;
+    }
+    .images_loop_sec .caption h2 {
+        font-size: 20px; 
+    }
+}
+
+@media(min-width: 768px) {
+	.tnp-subscription form {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+	.footer_subscribe .tnp-field-email {
+		width: 68%;
+	}
+	.footer_subscribe .tnp-field-button {
+		width: 30%;
+	}
+	.footer_gallery .gt3pg-isotope-item .isotope_item-wrapper {
+		cursor: pointer;
+	}
+    .footer_subscribe_filed_new form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer_subscribe_filed_new  form .wpforms-field-container {
+        width: 68% !important;
+    }
+    .footer_subscribe_filed_new  form .wpforms-submit-container {
+        width: 30% !important;
+    }
+}
+
+@media(max-width: 768px) {
+    section.career-sec-one .col-1-text p a {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+@media(max-width: 1100px) and (min-width: 600px) {
+    .images_loop_sec .inner_box {
+        width: 47%;
+        margin: 8px; 
+    }
+    .images_loop_sec .caption h3 {
+        font-size: 14px;
+        line-height: initial;
+    }
+    .images_loop_sec .caption h2 {
+        font-size: 20px; 
+    }
+}
+
+@media(max-width: 767px) {
+    .footer_subscribe_filed_new .wpforms-submit-container {
+            padding-top: 0px !important; 
+    }
+    .faq_page_Section .elementor-toggle-item .add_question_marker:before {
+        display: none !important;
+    }
+    span.gt3_dropcaps {
+        display: none !important;
+    }
+    .img_box .gt3-core-imagebox-wrapper{
+        margin-top: 0px !important;
+    }
+    .wpforms-submit-container button#wpforms-submit-11111 {
+        margin-bottom: 0px !important;
+    }
+    .page-id-12287 .gt3-page-title, .page-id-12366 .gt3-page-title, .page-id-12365 .gt3-page-title, .page-id-12364 .gt3-page-title {
+        margin-bottom: 10px !important;
+    }
+    .responsive-img-hide img {
+        display: block !important;
+    }
+    .desktop-img-hide img {
+        display: none !important;
+    }
+    .page-id-12287 img, .page-id-12366 img, .page-id-12365 img,  .page-id-12364 img {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .page-id-12287 .contact_us img, .page-id-12366 .contact_us img, .page-id-12365 .contact_us img, .page-id-12364 .contact_us img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1199px) and (min-width: 1101px) { 
+    .images_loop_sec .inner_box {
+        width: 31%;
+    }
+}
+/*sk mobitisinginc style end*/

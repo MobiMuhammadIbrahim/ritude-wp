@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Blacksword';
+    src: url('Blacksword.eot');
+    src: url('Blacksword.eot?#iefix') format('embedded-opentype'),
+        url('Blacksword.woff2') format('woff2'),
+        url('Blacksword.woff') format('woff'),
+        url('Blacksword.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blacksword';
+    src: url('Blacksword_1.eot');
+    src: url('Blacksword_1.eot?#iefix') format('embedded-opentype'),
+        url('Blacksword_1.woff2') format('woff2'),
+        url('Blacksword_1.woff') format('woff'),
+        url('Blacksword_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blackoak Std';
+    src: url('BlackoakStd.eot');
+    src: url('BlackoakStd.eot?#iefix') format('embedded-opentype'),
+        url('BlackoakStd.woff2') format('woff2'),
+        url('BlackoakStd.woff') format('woff'),
+        url('BlackoakStd.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

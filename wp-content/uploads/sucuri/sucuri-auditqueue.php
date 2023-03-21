@@ -1,0 +1,35 @@
+<?php
+// datastore=auditqueue;
+// created_on=1633344819;
+// updated_on=1654515960;
+exit(0);
+?>
+1633344819_758:"Warning: admin, 103.244.177.10; Plugin activated: Sucuri Security - Auditing, Malware Scanner and Hardening (v1.8.30; sucuri-scanner\/sucuri.php)"
+1633345057_8613:"Notice: admin, 103.244.177.10; Customize_changeset status has been changed; details: ID: 183,Old status: new,New status: auto-draft,Title: "
+1633416576_1579:"Error: 103.244.177.10; User authentication failed: admin"
+1633416595_1234:"Notice: 103.244.177.10; User authentication succeeded: admin"
+1635780002_3116:"Warning: 192.185.21.115; Post deleted: (multiple entries): Post id: 183,Post author: 1,Post type: customize_changeset,Post status: auto-draft,Post inserted: 2021-10-04 10:57:37,Post modified: 2021-10-04 10:57:37,Post guid: https:\/\/staging.ritude.com\/?p=183,Post title: (empty)"
+1635780002_3615:"Warning: 192.185.21.115; Post deleted: (multiple entries): Post id: 182,Post author: 1,Post type: post,Post status: auto-draft,Post inserted: 2021-10-04 10:40:07,Post modified: 2021-10-04 10:40:07,Post guid: https:\/\/staging.ritude.com\/?p=182,Post title: Auto Draft"
+1649152729_7677:"Notice: 127.0.0.1; User authentication succeeded: ritude"
+1649152753_1072:"Notice: ritude, 127.0.0.1; Post status has been changed; details: ID: 177,Old status: new,New status: auto-draft,Title: Auto Draft"
+1649152823_784:"Warning: ritude, 127.0.0.1; Plugin deactivated: All-in-One WP Migration (v7.47; all-in-one-wp-migration\/all-in-one-wp-migration.php)"
+1649154629_6204:"Warning: ritude, 127.0.0.1; Plugin activated: WP-Optimize - Clean, Compress, Cache (v3.2.3; wp-optimize\/wp-optimize.php)"
+1649222920_4789:"Notice: 127.0.0.1; User authentication succeeded: ritude"
+1649224731_2555:"Warning: ritude, 127.0.0.1; Plugin deactivated: EWWW Image Optimizer (v6.4.2; ewww-image-optimizer\/ewww-image-optimizer.php)"
+1649231784_9466:"Notice: 127.0.0.1; User authentication succeeded: ritude"
+1649231789_5878:"Notice: ritude, 127.0.0.1; Post status has been changed; details: ID: 178,Old status: new,New status: auto-draft,Title: Auto Draft"
+1649231972_2735:"Warning: ritude, 127.0.0.1; Plugin activated: Anti-Malware Security and Brute-Force Firewall (v4.20.96; gotmls\/index.php)"
+1649316991_2889:"Notice: ritude, 127.0.0.1; Revision status has been changed; details: ID: 179,Old status: new,New status: inherit,Title: Slide One"
+1649326904_4979:"Error: 127.0.0.1; User authentication failed: koyal@blogs"
+1649326926_1083:"Notice: 127.0.0.1; User authentication succeeded: ritude"
+1649654574_8484:"Notice: 127.0.0.1; User authentication succeeded: ritude"
+1650447119_1179:"Warning: 127.0.0.1; Post deleted: (multiple entries): Post id: 178,Post author: 1,Post type: post,Post status: auto-draft,Post inserted: 2022-04-06 07:56:29,Post modified: 2022-04-06 07:56:29,Post guid: http:\/\/localhost\/staging-ritude-wp\/?p=178,Post title: Auto Draft"
+1650447259_0565:"Notice: 127.0.0.1; User authentication succeeded: ritude"
+1650447291_482:"Notice: ritude, 127.0.0.1; Post status has been changed; details: ID: 180,Old status: new,New status: auto-draft,Title: Auto Draft"
+1652796213_8292:"Warning: 127.0.0.1; Post deleted: (multiple entries): Post id: 180,Post author: 1,Post type: post,Post status: auto-draft,Post inserted: 2022-04-20 09:34:50,Post modified: 2022-04-20 09:34:50,Post guid: http:\/\/localhost\/staging-ritude-wp\/?p=180,Post title: Auto Draft"
+1652796448_2075:"Error: 127.0.0.1; User authentication failed: admin"
+1652796476_1478:"Error: 127.0.0.1; User authentication failed: admin"
+1652796497_6972:"Notice: 127.0.0.1; User authentication succeeded: ritude"
+1652796590_4641:"Notice: ritude, 127.0.0.1; Post status has been changed; details: ID: 181,Old status: new,New status: auto-draft,Title: Auto Draft"
+1654515915_2544:"Notice: 127.0.0.1; User authentication succeeded: ritude"
+1654515943_6551:"Warning: 127.0.0.1; Post deleted: (multiple entries): Post id: 181,Post author: 1,Post type: post,Post status: auto-draft,Post inserted: 2022-05-17 14:09:50,Post modified: 2022-05-17 14:09:50,Post guid: http:\/\/localhost\/staging-ritude-wp\/?p=181,Post title: Auto Draft"
