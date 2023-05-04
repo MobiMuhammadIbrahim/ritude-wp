@@ -79,7 +79,7 @@
 			while ( ! self.classList.contains( 'nav-menu' ) ) {
 				// On li elements toggle the class .focus.
 				if ( 'li' === self.tagName.toLowerCase() ) {
-					self.classList.toggle( 'focus' );
+					//self.classList.toggle( 'focus' );
 				}
 				self = self.parentNode;
 			}

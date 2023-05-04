@@ -1,6 +1,12 @@
+// header menu class add in li navigation 
+$(document).ready(function ($) {
+  $("nav#site-navigation ul#primary-menu li").click(function () {
+    $('nav#site-navigation ul#primary-menu li.menu-item-has-children.focus ul.sub-menu').show();
+  });
+});
+
 jQuery(function () {
   new WOW().init();
-
 });
 
 // ********************************************************* //
