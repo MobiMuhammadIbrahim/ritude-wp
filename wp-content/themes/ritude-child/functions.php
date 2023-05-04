@@ -456,44 +456,44 @@ function create_homeslider_cpt() {
 }
 add_action( 'init', 'create_homeslider_cpt', 0 );
 
-// Register Custom Post Type Service
-function create_service_cpt() {
+// Register Custom Post Type Distribution Platforms
+function create_distribution_platform_cpt() {
 
 	$labels = array(
-		'name' => _x( 'Services', 'Post Type General Name', 'textdomain' ),
-		'singular_name' => _x( 'Service', 'Post Type Singular Name', 'textdomain' ),
-		'menu_name' => _x( 'Services', 'Admin Menu text', 'textdomain' ),
-		'name_admin_bar' => _x( 'Service', 'Add New on Toolbar', 'textdomain' ),
-		'archives' => __( 'Service Archives', 'textdomain' ),
-		'attributes' => __( 'Service Attributes', 'textdomain' ),
-		'parent_item_colon' => __( 'Parent Service:', 'textdomain' ),
-		'all_items' => __( 'All Services', 'textdomain' ),
-		'add_new_item' => __( 'Add New Service', 'textdomain' ),
+		'name' => _x( 'Distribution Platform', 'Post Type General Name', 'textdomain' ),
+		'singular_name' => _x( 'Distribution Platform', 'Post Type Singular Name', 'textdomain' ),
+		'menu_name' => _x( 'Distribution Platform', 'Admin Menu text', 'textdomain' ),
+		'name_admin_bar' => _x( 'Distribution Platform', 'Add New on Toolbar', 'textdomain' ),
+		'archives' => __( 'Distribution Platform Archives', 'textdomain' ),
+		'attributes' => __( 'Distribution Platform Attributes', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Distribution Platform:', 'textdomain' ),
+		'all_items' => __( 'All Distribution Platform', 'textdomain' ),
+		'add_new_item' => __( 'Add New Distribution Platform', 'textdomain' ),
 		'add_new' => __( 'Add New', 'textdomain' ),
-		'new_item' => __( 'New Service', 'textdomain' ),
-		'edit_item' => __( 'Edit Service', 'textdomain' ),
-		'update_item' => __( 'Update Service', 'textdomain' ),
-		'view_item' => __( 'View Service', 'textdomain' ),
-		'view_items' => __( 'View Services', 'textdomain' ),
-		'search_items' => __( 'Search Service', 'textdomain' ),
+		'new_item' => __( 'New Distribution Platform', 'textdomain' ),
+		'edit_item' => __( 'Edit Distribution Platform', 'textdomain' ),
+		'update_item' => __( 'Update Distribution Platform', 'textdomain' ),
+		'view_item' => __( 'View Distribution Platform', 'textdomain' ),
+		'view_items' => __( 'View Distribution Platform', 'textdomain' ),
+		'search_items' => __( 'Search Distribution Platform', 'textdomain' ),
 		'not_found' => __( 'Not found', 'textdomain' ),
 		'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
 		'featured_image' => __( 'Featured Image', 'textdomain' ),
 		'set_featured_image' => __( 'Set featured image', 'textdomain' ),
 		'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
 		'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
-		'insert_into_item' => __( 'Insert into Service', 'textdomain' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this Service', 'textdomain' ),
-		'items_list' => __( 'Services list', 'textdomain' ),
-		'items_list_navigation' => __( 'Services list navigation', 'textdomain' ),
-		'filter_items_list' => __( 'Filter Services list', 'textdomain' ),
+		'insert_into_item' => __( 'Insert into Distribution Platform', 'textdomain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Distribution Platform', 'textdomain' ),
+		'items_list' => __( 'Distribution Platform list', 'textdomain' ),
+		'items_list_navigation' => __( 'Distribution Platform list navigation', 'textdomain' ),
+		'filter_items_list' => __( 'Filter Distribution Platform list', 'textdomain' ),
 	);
 	$args = array(
-		'label' => __( 'Service', 'textdomain' ),
+		'label' => __( 'Distribution Platform', 'textdomain' ),
 		'description' => __( '', 'textdomain' ),
 		'labels' => $labels,
-		'menu_icon' => 'dashicons-admin-generic',
-		'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+		'menu_icon' => 'dashicons-admin-home',
+		'supports' => array('title', 'thumbnail'),
 		'taxonomies' => array(),
 		'public' => true,
 		'show_ui' => true,
@@ -509,10 +509,10 @@ function create_service_cpt() {
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
 	);
-	register_post_type( 'services_posttype', $args );
+	register_post_type( 'distributionplatform', $args );
 
 }
-add_action( 'init', 'create_service_cpt', 0 );
+add_action( 'init', 'create_distribution_platform_cpt', 0 );
 
 
 
@@ -842,7 +842,7 @@ $message .='
 			<div class="slider-content" >
 				<div class="description">
 					<h2>'.$red_heading.'<span>'.$white_heading.'</span></h2>
-					<img src="https://staging.ritude.com/wp-content/uploads/2022/11/line.png" height="3" width="300" class="under_head_line">
+					<img src="https://www.ritude.com/wp-content/uploads/2022/11/line.png" height="3" width="300" class="under_head_line">
 					<p>'.$content_paragraph.'</p>
 				</div>
 					<a href="https://www.ritude.com/contact-us/" class="red-btn">Contact Us</a>
@@ -1023,3 +1023,85 @@ function remove_css_js_version( $src ) {
 }
 add_filter( 'style_loader_src', 'remove_css_js_version', 9999 );
 add_filter( 'script_loader_src', 'remove_css_js_version', 9999 );
+
+
+
+function wpb_testimonials_slider_shortcode($message = '') {
+// Things that you want to do.
+$message .= '
+<div id="our-testimonials" class="our-testimonials">';
+
+	$args = array(
+	'post_type' => 'testimonial_posttype',
+	'post_status' => 'publish',
+	'posts_per_page' => '-1',
+	'order' => 'ASC',
+	);
+	
+	$loop = new WP_Query( $args );
+	
+	while ( $loop->have_posts() ) : $loop->the_post();
+	$slider_image = get_the_post_thumbnail_URL();
+	$get_content = get_the_excerpt();
+	$content = strlen($get_content) > 15 ? substr($get_content,0,196)." " : $get_content;
+	$title = get_the_title();
+	$message .='
+		<div class="inner-wrapper">
+			<div class="testimonials">
+				<p>"'.$content.'"</p>
+				<span style="color: white;">--</span>
+				<h5>'.$title.'</h5>
+			</div>
+		</div>
+	';
+	endwhile;
+	wp_reset_postdata();
+	$message .='
+</div>
+';
+
+// Output needs to be return
+return $message;
+}
+// register shortcode
+add_shortcode('testimonials_slider', 'wpb_testimonials_slider_shortcode');
+
+function wpb_distributionplatform_logo_slider_shortcode($message = '') {
+	// Things that you want to do.
+	$message .= '
+	<div id="distributionplatform" class="distributionplatform">';
+
+		$args = array(
+		'post_type' => 'distributionplatform',
+		'post_status' => 'publish',
+		'posts_per_page' => '-1',
+		'order' => 'ASC',
+		);
+		
+		$loop = new WP_Query( $args );
+		
+		while ( $loop->have_posts() ) : $loop->the_post();
+		$slider_image = get_the_post_thumbnail_URL();
+		
+		$message .='
+			<div class="inner-wrapper">
+				<div class="partners-logo">
+					<img src="'.$slider_image.'" alt="">
+				</div>
+			</div>
+		';
+		
+		
+		endwhile;
+		wp_reset_postdata();
+		
+		$message .='
+		
+	</div>
+	';
+
+	// Output needs to be return
+	return $message;
+}
+// register shortcode
+add_shortcode('distributionplatform_logo_slider', 'wpb_distributionplatform_logo_slider_shortcode');

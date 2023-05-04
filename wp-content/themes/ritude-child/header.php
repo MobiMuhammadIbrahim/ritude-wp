@@ -25,6 +25,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/fonts/lato/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/custom_style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/custom_animation.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/fonts/Jost/stylesheet.css">
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery3.4.min.js"></script>
 	<?php wp_head(); ?>
@@ -46,11 +47,11 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<header id="masthead" class="site-header" >
+<header id="masthead" class="site-header custom_header_3456" >
 	
                 
 <div class="container">
-<div class="head-wrap wow animate__slideInDown" data-wow-duration="1s" data-wow-delay=".5s">
+<div class="head-wrap">
 <div class="head-left">
 <div class="site-branding">
 	<?php
