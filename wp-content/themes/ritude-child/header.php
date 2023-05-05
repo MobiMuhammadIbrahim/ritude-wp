@@ -45,6 +45,7 @@
 
 </head>
 <body <?php body_class(); ?>>
+<div id="preloader"></div>
 <?php wp_body_open(); ?>
 
 <header id="masthead" class="site-header custom_header_3456" >
