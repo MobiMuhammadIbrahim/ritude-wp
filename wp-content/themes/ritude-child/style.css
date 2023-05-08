@@ -158,7 +158,7 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 9999;
     background-size: 60%;
 }
 
@@ -1127,6 +1127,9 @@ div#our-partners .slick-arrow {
     body .vc-height {
         height: 0px !important; 
     }
+    #preloader {
+        background-size: 100%;
+    }
 }
 
 @media (max-width: 1060px) and (min-width: 768px) {
@@ -1847,6 +1850,13 @@ div#cus-faq-sec .vc_toggle_title>h4 {
     ul.home_services_btn li, ul.home_services_btn li a {
         width: 100%;
     }
+    .image_col .vc_column-inner, .image_col .wpb_wrapper,
+    .audio_col .vc_column-inner, .audio_col .wpb_wrapper, 
+    .video_col  .vc_column-inner, .video_col  .wpb_wrapper, 
+    .nft_col .vc_column-inner, .nft_col .wpb_wrapper {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
 }
 /* audio lisence page style by mk end */
 /**=============================================
@@ -2204,33 +2214,24 @@ div#cus-faq-sec .vc_toggle_title>h4 {
         padding: 30px 0px 20px 0;
     }
 
-    div#top {
-        right: 10px;
-    }
 }
-
-div#top {
-    position: absolute;
-    right: 40px;
-    z-index: 99;
-}
-
-.backtop a {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+#bottom_to_Top {
+    padding: 9px 12px;
     background: #ef1741;
     color: #fff;
-    font-size: 20px;
+    position: fixed;
+    bottom: 35px;
+    right: 16px;
+    display: none;
+    z-index: 999;
+    border-radius: 2px;
     cursor: pointer;
-    z-index: 99;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0px 0px 3px 0.5px rgb(0 0 0 / 50%);
+    border-radius: 50%;
 }
-
+div#bottom_to_Top i {
+    font-size: 32px;
+}
 /* media queries for responsive by SK */
 @media (max-width:1399px) and (min-width: 1200px) {
     .page-id-116 .service_sec_one {

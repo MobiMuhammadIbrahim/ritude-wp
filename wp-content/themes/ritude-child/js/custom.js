@@ -362,21 +362,18 @@ jQuery(function () {
 //  BACK TO TOP JQUERY START  //
 // *************************************** //
 
-
-var height = $(window).height();
-$('#top').css('top', height - 0);
-$(window).scroll(function () {
-  var scroll = $(document).scrollTop();
-  $('#top').stop().animate({
-    top: height + scroll - 90
-  }, 400);
+$(window).scroll(function() {
+  if ($(this).scrollTop()) {
+      $('#bottom_to_Top').fadeIn();
+  } else {
+      $('#bottom_to_Top').fadeOut();
+  }
 });
 
-$('#top').click(function () {
-  $('body').stop().animate({
-    scrollTop: 0
-  }, 300);
+$("#bottom_to_Top").click(function () {
+ $("html, body").animate({scrollTop: 0}, 500);
 });
+
 
 // **************************************** //
       //  BACK TO TOP JQUERY END  //
