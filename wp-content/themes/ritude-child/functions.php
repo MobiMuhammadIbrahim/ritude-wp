@@ -825,36 +825,37 @@ $args = array(
 );
 
 $loop = new WP_Query( $args ); 
-	
+
+$counter = 0;
+
 while ( $loop->have_posts() ) : $loop->the_post();
+    $slider_image = get_the_post_thumbnail_URL();
+    $red_heading = get_field('red_heading');
+    $white_heading = get_field('white_heading');
+    $content_paragraph = get_field('content_paragraph');
+    // $contact_us_url = get_field('contact_us_url');
+    $cover_mobile_img = get_field('cover_mobile_image');
 
-$slider_image = get_the_post_thumbnail_URL();
-$red_heading = get_field('red_heading');
-$white_heading = get_field('white_heading');
-$content_paragraph = get_field('content_paragraph');
-// $contact_us_url = get_field('contact_us_url');
-$cover_mobile_img = get_field('cover_mobile_image');
+    $heading_tag = ($counter === 0) ? 'h1' : 'h2';
 
-
-$message .='
-	<div class="inner-wrapper" style="background-image:url('.$slider_image.')">
-		<div class="container">
-			<div class="slider-content" >
-				<div class="description">
-					<h2>'.$red_heading.'<span>'.$white_heading.'</span></h2>
-					<img src="https://www.ritude.com/wp-content/uploads/2022/11/line.png" height="3" width="300" class="under_head_line">
-					<p>'.$content_paragraph.'</p>
-				</div>
-					<a href="https://www.ritude.com/contact-us/" class="red-btn">Contact Us</a>
-					<div class="mobile_img">
-						<img src="'.$cover_mobile_img.'">
-					</div>
-				</div>
-			</div>
-		</div>
-';
-
-
+    $message .= '
+        <div class="inner-wrapper" style="background-image:url('.$slider_image.')">
+            <div class="container">
+                <div class="slider-content">
+                    <div class="description">'.                    
+                        '<'.$heading_tag.'>'.$red_heading.'<span>'.$white_heading.'</span></'.$heading_tag.'>' .
+                        '<img src="https://www.ritude.com/wp-content/uploads/2022/11/line.png" height="3" width="300" class="under_head_line">
+                        <p>'.$content_paragraph.'</p>
+                    </div>
+                    <a href="https://www.ritude.com/contact-us/" class="red-btn">Contact Us</a>
+                    <div class="mobile_img">
+                        <img src="'.$cover_mobile_img.'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    ';
+    $counter++;
 endwhile;
 wp_reset_postdata();
 

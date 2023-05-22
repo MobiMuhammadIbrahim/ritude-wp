@@ -23,6 +23,9 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /* gradein animation color on heading style */
+body.page .post-thumbnail {
+    display: none !important;
+}
 .animated_background {
     /* background: center 100% radial-gradient(ellipse at bottom, rgba(20,20,20,.8) 10% 10%, rgba(20,20,20,1)), center / 400% no-repeat linear-gradient(-45deg, #00ef86, #008cff, #ec3258, #fcda00); */
     background: center 100% radial-gradient(ellipse at bottom, rgba(20,20,20,.8) 10% 10%, rgba(20,20,20,1)), center / 400% no-repeat linear-gradient(-45deg, blue, grey, red, #fcda00);
@@ -165,13 +168,16 @@ body::-webkit-scrollbar-thumb {
 /**===================================
         GLOBAL CSS START HERE
 ======================================**/
-
+body.page .heading h1, body.page .heading h1 span {
+    font-size: 50px;
+}
 .heading h2,
-.heading h2 span {
+.heading h2 span, .heading h1,
+.heading h1 span {
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 35px;
     line-height: 1;
     padding-bottom: 10px;
 }
@@ -658,7 +664,7 @@ li.contact_us_mobile {
     background-position: right center;
 }
 
-.home-slider .description h2 {
+.home-slider .description h2, .home-slider .description h1 {
     font-family: OpenSans-ExtraBold;
     font-size: 50px;
     color: #ef1741;
@@ -672,7 +678,7 @@ li.contact_us_mobile {
     margin-top: 8px;
 }
 
-.home-slider .description h2,
+.home-slider .description h2, .home-slider .description h1, 
 .home-slider .description span {
     font-weight: 600;
     text-transform: uppercase;
@@ -680,10 +686,10 @@ li.contact_us_mobile {
     padding-bottom: 6px;
 }
 
-.home-slider .description h2>span {
+.home-slider .description h2>span, .home-slider .description h1>span {
     color: #FFF;
     display: block;
-    font-size: 56px;
+    font-size: 50px;
 }
 
 .home-slider .description {
@@ -802,7 +808,7 @@ div#community .community-thumbnail img {
 .community .description h2 {
     color: #fff;
     line-height: 1;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 10px;
@@ -987,7 +993,8 @@ div#our-partners .slick-arrow {
 }
 
 .success-story-sec .heading h2,
-.success-story-sec .heading h2 span {
+.success-story-sec .heading h2 span, .success-story-sec .heading h1,
+.success-story-sec .heading h1 span {
     padding-bottom: 0px;
 }
 
@@ -1472,7 +1479,7 @@ div#dfo-sec .vc_btn3-container {
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 35px;
     line-height: 1;
     padding-bottom: 10px;
 }
@@ -1483,7 +1490,7 @@ div#dfo-sec .vc_btn3-container {
 
 .service-content span {
     color: #fff;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
     position: absolute;
     bottom: 0%;
@@ -1881,7 +1888,7 @@ div#cus-faq-sec .vc_toggle_title>h4 {
     }
 
     .community .description h2 {
-        font-size: 44px;
+        font-size: 35px;
     }
 
     .signup-sec .heading h2 {
@@ -1921,9 +1928,12 @@ div#cus-faq-sec .vc_toggle_title>h4 {
     .footer-col-2 {
         padding-left: 80px;
     }
-
+    body.page .heading h1, body.page .heading h1 span {
+        font-size: 45px;
+    }
     .heading h2,
-    .heading h2 span {
+    .heading h2 span, .heading h1,
+    .heading h1 span {
         font-size: 40px;
     }
 
@@ -1986,9 +1996,12 @@ div#cus-faq-sec .vc_toggle_title>h4 {
     .red-btn {
         font-size: 16px !important;
     }
-
+    body.page .heading h1, body.page .heading h1 span {
+        font-size: 40px;
+    }
     .heading h2,
-    .heading h2 span {
+    .heading h2 span, .heading h1,
+    .heading h1 span  {
         font-size: 36px;
     }
 
@@ -2097,7 +2110,8 @@ div#cus-faq-sec .vc_toggle_title>h4 {
     }
 
     .heading h2,
-    .heading h2 span {
+    .heading h2 span, .heading h1,
+    .heading h1 span {
         font-size: 30px;
     }
 
@@ -2358,9 +2372,12 @@ div#bottom_to_Top i {
         padding-bottom: 0px !important;
         padding-top: 0px !important;
     }
-
+    body.page .heading h1, body.page .heading h1 span {
+        font-size: 27px;
+    }
     .heading h2,
-    .heading h2 span {
+    .heading h2 span, .heading h1,
+    .heading h1 span {
         font-size: 23px;
         line-height: 28px;
     }
@@ -2523,7 +2540,8 @@ div#bottom_to_Top i {
     }
 
     body .heading h2,
-    body .heading h2 span  {
+    body .heading h2 span, body .heading h1,
+    body .heading h1 span   {
         text-align: left !important;
     }
 
