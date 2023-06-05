@@ -365,6 +365,12 @@
 	padding: 0 0 0 80px;
 }
 
+.blue-borderline-animate-sec .webprod-process__step--right-aligned {
+	position: relative;
+	margin: 0;
+	padding: 0 80px 0 0px;
+}
+
 @media only screen and (max-width: 600px) {
 	.blue-borderline-animate-sec .webprod-process__step--left-aligned {
 		padding: 60px 0 0;
@@ -381,7 +387,16 @@
 	left: 0;
 }
 
-.blue-borderline-animate-sec .webprod-process__step--left-aligned:before {
+.blue-borderline-animate-sec .webprod-process__step--right-aligned:before,
+.blue-borderline-animate-sec .webprod-process__step--right-aligned:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.blue-borderline-animate-sec .webprod-process__step--left-aligned:before, .blue-borderline-animate-sec .webprod-process__step--right-aligned:before {
 	width: 3px;
 	height: 100%;
 	height: 0%;
@@ -404,9 +419,16 @@
 	height: 44px;
 	background: transparent url('https://www.ritude.com/wp-content/uploads/2023/04/cogs-dot.svg') no-repeat top left;
 }
+.blue-borderline-animate-sec .webprod-process__step--right-aligned:after {
+	top: -2px;
+	right: -22px;
+	width: 44px;
+	height: 44px;
+	background: transparent url('https://www.ritude.com/wp-content/uploads/2023/04/cogs-dot.svg') no-repeat top left;
+}
 
 @media only screen and (min-width: 601px) {
-	.blue-borderline-animate-sec .webprod-process__step--left-aligned:after {
+	.blue-borderline-animate-sec .webprod-process__step--left-aligned:after, .blue-borderline-animate-sec .webprod-process__step--right-aligned:after {
 		-webkit-transform: scale(0.2);
 		-moz-transform: scale(0.2);
 		-ms-transform: scale(0.2);
@@ -424,13 +446,13 @@
 	}
 }
 
-.blue-borderline-animate-sec .webprod-process__step--left-aligned.in-view--partial:after {
+.blue-borderline-animate-sec .webprod-process__step--left-aligned.in-view--partial:after,.blue-borderline-animate-sec .webprod-process__step--right-aligned.in-view--partial:after {
 	-webkit-animation: popin 200ms linear 650ms forwards;
 	-moz-animation: popin 200ms linear 650ms forwards;
 	animation: popin 200ms linear 650ms forwards;
 }
 
-.blue-borderline-animate-sec .webprod-process__step--left-aligned.in-view--whole:before {
+.blue-borderline-animate-sec .webprod-process__step--left-aligned.in-view--whole:before,  .blue-borderline-animate-sec .webprod-process__step--right-aligned.in-view--whole:before{
 	height: 100%
 }
 

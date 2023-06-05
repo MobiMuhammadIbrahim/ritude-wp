@@ -53,11 +53,11 @@
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/custom_animation.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/custom.js"></script>
 <script type="text/javascript">
-	// Preloader js code by sk 
-	var loader = document.getElementById("preloader");
-	window.addEventListener ("load", function() {
-		loader.style.display = 'none';
-	});
+	// // Preloader js code by sk 
+	// var loader = document.getElementById("preloader");
+	// window.addEventListener ("load", function() {
+	// 	loader.style.display = 'none';
+	// });
 </script>
 </body>
 </html>

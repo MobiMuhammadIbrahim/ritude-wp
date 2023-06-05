@@ -46,7 +46,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="preloader"></div>
+<!-- <div id="preloader"></div> -->
 <div id="bottom_to_Top"><i class="fas fa-arrow-up"></i></div>
 <header id="masthead" class="site-header custom_header_3456" >
 	

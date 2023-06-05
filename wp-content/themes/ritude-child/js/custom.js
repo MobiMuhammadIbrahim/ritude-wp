@@ -24,13 +24,13 @@ jQuery(window).scroll(function ($) {
 $(document).ready(function () {
   $("#menu-toggler").click(function () {
     // setTimeout(() => {
-      if ($("#masthead nav.navbar").hasClass("toggled")) {
-        $(".custom_header_3456.fixed").css("top", "0");
-        $(".custom_header_3456.fixed").css("bottom", "0");
-      }else {
-        $(".custom_header_3456.fixed").css("top", "unset");
-        $(".custom_header_3456.fixed").css("bottom", "unset");
-      }
+    if ($("#masthead nav.navbar").hasClass("toggled")) {
+      $(".custom_header_3456.fixed").css("top", "0");
+      $(".custom_header_3456.fixed").css("bottom", "0");
+    } else {
+      $(".custom_header_3456.fixed").css("top", "unset");
+      $(".custom_header_3456.fixed").css("bottom", "unset");
+    }
     // }, 1000); 
   });
 })
@@ -362,16 +362,16 @@ jQuery(function () {
 //  BACK TO TOP JQUERY START  //
 // *************************************** //
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(this).scrollTop()) {
-      $('#bottom_to_Top').fadeIn();
+    $('#bottom_to_Top').fadeIn();
   } else {
-      $('#bottom_to_Top').fadeOut();
+    $('#bottom_to_Top').fadeOut();
   }
 });
 
 $("#bottom_to_Top").click(function () {
- $("html, body").animate({scrollTop: 0}, 500);
+  $("html, body").animate({ scrollTop: 0 }, 500);
 });
 
 

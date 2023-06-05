@@ -1,0 +1,36 @@
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(fonts/opansans/OpenSans-Bold.woff);
+}
+
+@font-face {
+    font-family: OpenSans-ExtraBold;
+    src: url(fonts/opansans/OpenSans-ExtraBold.woff);
+}
+
+
+/* ABOUT US PAGE STYLE  */
+
+
+/* .site-main .wpb_single_image {
+    margin-bottom: 0px;
+}
+
+.about_sec_one h2,
+.about_sec_one h3,
+.about_sec_one p {
+    color: white;
+}
+
+.about_sec_one h2 {
+    font-size: 58px;
+    font-family: OpenSans-ExtraBold;
+}
+
+.about_sec_one h3 {
+    font-size: 53px;
+    font-family: OpenSans-Bold;
+} */
+
+
+/* HOME PAGE STYLE START  */
