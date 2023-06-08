@@ -1,8 +1,185 @@
-// header menu class add in li navigation 
-$(document).ready(function ($) {
-  $("nav#site-navigation ul#primary-menu li").click(function () {
-    $('nav#site-navigation ul#primary-menu li.menu-item-has-children.focus ul.sub-menu').show();
+// // homeslider images animation js
+jQuery(document).ready(function ($) {
+  //Items
+  var $card_box = $(".card_box");
+  var $container_slider_1 = $(".container_slider_1");
+
+  var $card_box_2 = $(".card_box_2");
+  var $container_slider_2 = $(".container_slider_2");
+
+  var $card_box_3 = $(".card_box_3");
+  var $container_slider_3 = $(".container_slider_3");
+
+  var $card_box_4 = $(".card_box_4");
+  var $container_slider_4 = $(".container_slider_4");
+
+  var $card_box_5 = $(".card_box_5");
+  var $container_slider_5 = $(".container_slider_5");
+
+
+  var $bike = $(".bike img");
+  var $bike2 = $(".bike2 img");
+  var $bike3 = $(".bike3 img");
+  var $bike4 = $(".bike4 img");
+  var $bike5 = $(".bike5 img");
+  var $bike6 = $(".bike6 img");
+  var $bike7 = $(".bike7 img");
+  var $bike8 = $(".bike8 img");
+
+  var $slide_2_img1 = $(".slide_2_img1 img");
+  var $slide_2_img2 = $(".slide_2_img2 img");
+  var $slide_2_img3 = $(".slide_2_img3 img");
+  var $slide_2_img4 = $(".slide_2_img4 img");
+  var $slide_2_img5 = $(".slide_2_img5 img");
+  var $slide_2_img6 = $(".slide_2_img6 img");
+  var $slide_2_img7 = $(".slide_2_img7 img");
+  var $slide_2_img8 = $(".slide_2_img8 img");
+  var $slide_2_img9 = $(".slide_2_img9 img");
+
+  var $slide_3_img1 = $(".slide_3_img1 img");
+  var $slide_3_img2 = $(".slide_3_img2 img");
+  var $slide_3_img3 = $(".slide_3_img3 img");
+  var $slide_3_img4 = $(".slide_3_img4 img");
+  var $slide_3_img5 = $(".slide_3_img5 img");
+
+  var $slide_4_img1 = $(".slide_4_img1 img");
+  var $slide_4_img2 = $(".slide_4_img2 img");
+  var $slide_4_img3 = $(".slide_4_img3 img");
+  var $slide_4_img4 = $(".slide_4_img4 img");
+  var $slide_4_img5 = $(".slide_4_img5 img");
+  var $slide_4_img6 = $(".slide_4_img6 img");
+  var $slide_4_img7 = $(".slide_4_img7 img");
+
+  var $slide_5_img1 = $(".slide_5_img1 img");
+  var $slide_5_img2 = $(".slide_5_img2 img");
+  var $slide_5_img3 = $(".slide_5_img3 img");
+  var $slide_5_img4 = $(".slide_5_img4 img");
+  var $slide_5_img5 = $(".slide_5_img5 img");
+  var $slide_5_img6 = $(".slide_5_img6 img");
+
+
+  //Moving Animation Event
+  $container_slider_1.on("mousemove", function (e) {
+    let xAxis = (window.innerWidth / 2 - e.clientX) / 25;
+    let yAxis = (window.innerHeight / 2 - e.clientY) / 25;
+    $card_box.css("transform", `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`);
   });
+  $container_slider_2.on("mousemove", function (e) {
+    let xAxis = (window.innerWidth / 2 - e.clientX) / 25;
+    let yAxis = (window.innerHeight / 2 - e.clientY) / 25;
+    $card_box_2.css("transform", `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`);
+  });
+  $container_slider_3.on("mousemove", function (e) {
+    let xAxis = (window.innerWidth / 2 - e.clientX) / 25;
+    let yAxis = (window.innerHeight / 2 - e.clientY) / 25;
+    $card_box_3.css("transform", `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`);
+  });
+  $container_slider_4.on("mousemove", function (e) {
+    let xAxis = (window.innerWidth / 2 - e.clientX) / 25;
+    let yAxis = (window.innerHeight / 2 - e.clientY) / 25;
+    $card_box_4.css("transform", `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`);
+  });
+  $container_slider_5.on("mousemove", function (e) {
+    let xAxis = (window.innerWidth / 2 - e.clientX) / 25;
+    let yAxis = (window.innerHeight / 2 - e.clientY) / 25;
+    $card_box_5.css("transform", `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`);
+  });
+
+
+  //Animate on Hover
+  $container_slider_1.hover(function () {
+    $card_box.toggleClass("has-transform");
+    $bike.toggleClass("has-transform");
+    $bike2.toggleClass("has-transform");
+    $bike3.toggleClass("has-transform");
+    $bike4.toggleClass("has-transform");
+    $bike5.toggleClass("has-transform");
+    $bike6.toggleClass("has-transform");
+    $bike7.toggleClass("has-transform");
+    $bike8.toggleClass("has-transform");
+  });
+  $container_slider_2.hover(function () {
+    $card_box_2.toggleClass("has-transform");
+    $slide_2_img1.toggleClass("has-transform");
+    $slide_2_img2.toggleClass("has-transform");
+    $slide_2_img3.toggleClass("has-transform");
+    $slide_2_img4.toggleClass("has-transform");
+    $slide_2_img5.toggleClass("has-transform");
+    $slide_2_img6.toggleClass("has-transform");
+    $slide_2_img7.toggleClass("has-transform");
+    $slide_2_img8.toggleClass("has-transform");
+    $slide_2_img9.toggleClass("has-transform");
+  });
+
+  $container_slider_3.hover(function () {
+    $card_box_3.toggleClass("has-transform");
+    $slide_3_img1.toggleClass("has-transform");
+    $slide_3_img2.toggleClass("has-transform");
+    $slide_3_img3.toggleClass("has-transform");
+    $slide_3_img4.toggleClass("has-transform");
+    $slide_3_img5.toggleClass("has-transform");
+  });
+  
+  $container_slider_4.hover(function () {
+    $card_box_4.toggleClass("has-transform");
+    $slide_4_img1.toggleClass("has-transform");
+    $slide_4_img2.toggleClass("has-transform");
+    $slide_4_img3.toggleClass("has-transform");
+    $slide_4_img4.toggleClass("has-transform");
+    $slide_4_img5.toggleClass("has-transform");
+    $slide_4_img6.toggleClass("has-transform");
+    $slide_4_img7.toggleClass("has-transform");
+  });
+
+  $container_slider_5.hover(function () {
+    $card_box_5.toggleClass("has-transform");
+    $slide_5_img1.toggleClass("has-transform");
+    $slide_5_img2.toggleClass("has-transform");
+    $slide_5_img3.toggleClass("has-transform");
+    $slide_5_img4.toggleClass("has-transform");
+    $slide_5_img5.toggleClass("has-transform");
+    $slide_5_img6.toggleClass("has-transform");
+  });
+
+  //Pop Back on mouseleave
+  $container_slider_1.on("mouseleave", function () {
+    $card_box.css("transform", `rotateY(0deg) rotateX(0deg)`);
+  });
+
+  $container_slider_2.on("mouseleave", function () {
+    $card_box_2.css("transform", `rotateY(0deg) rotateX(0deg)`);
+  });
+
+  $container_slider_3.on("mouseleave", function () {
+    $card_box_3.css("transform", `rotateY(0deg) rotateX(0deg)`);
+  });
+
+  $container_slider_4.on("mouseleave", function () {
+    $card_box_4.css("transform", `rotateY(0deg) rotateX(0deg)`);
+  });
+
+  $container_slider_5.on("mouseleave", function () {
+    $card_box_5.css("transform", `rotateY(0deg) rotateX(0deg)`);
+  });
+});
+// home slider animation js end 
+
+
+$(document).ready(function ($) {
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    $('button#menu-toggler').on('click', function () {
+      // Check if the navigation menu has the 'toggled' class
+      if ($('nav#site-navigation').hasClass('toggled')) {
+        // If the menu is toggled, show the primary-menu
+        $('ul#primary-menu').css('opacity', '1');
+        $('ul#primary-menu').css('visibility', 'visible');
+      } else {
+        // If the menu is not toggled, hide the primary-menu
+        $('ul#primary-menu').css('opacity', '0');
+        $('ul#primary-menu').css('visibility', 'hidden');
+      }
+    });
+  }
 });
 
 jQuery(function () {
@@ -12,15 +189,16 @@ jQuery(function () {
 // ********************************************************* //
 // MAIN MENU SLIDER JQUERY START HERE //
 // ********************************************************* //
-// header menu fixed js code 
-jQuery(window).scroll(function ($) {
-  var scroll = jQuery(window).scrollTop();
-  if (scroll >= 150) {
-    jQuery(".custom_header_3456").addClass("fixed");
-  } else {
-    jQuery(".custom_header_3456").removeClass("fixed");
-  }
-});
+    jQuery(window).scroll(function ($) {
+      var scroll = jQuery(window).scrollTop();
+    
+      if (scroll >= 150) {
+        jQuery(".custom_header_3456").css("top", "0");
+      } else {
+        jQuery(".custom_header_3456").css("top", "");
+      }
+    });
+
 $(document).ready(function () {
   $("#menu-toggler").click(function () {
     // setTimeout(() => {
@@ -34,10 +212,6 @@ $(document).ready(function () {
     // }, 1000); 
   });
 })
-
-// console.log($("#masthead nav.navbar").hasClass("toggled"));
-// $(".custom_header_3456.fixed").css("top", "0px");
-// $(".custom_header_3456.fixed").css("bottom", "0px");
 
 
 // Toggle menu on click

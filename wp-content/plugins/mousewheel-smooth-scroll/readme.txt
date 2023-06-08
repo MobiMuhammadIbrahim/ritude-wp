@@ -3,8 +3,8 @@ Contributors: KubiQ
 Donate link: https://www.paypal.me/jakubnovaksl
 Tags: smooth scroll, mousewheel scroll, scrolling
 Requires at least: 3.0.1
-Tested up to: 5.9
-Stable tag: 5.9
+Tested up to: 6.1
+Stable tag: 6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ You can play with settings and test it here:
 1. Plugin settings
 
 == Changelog ==
+
+= 6.0 =
+* tested on WP 6.1
 
 = 5.9 =
 * fix trailing comma

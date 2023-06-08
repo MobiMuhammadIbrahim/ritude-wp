@@ -1,0 +1,182 @@
+0000.002 (0) Opened log file at time: Thu, 08 Jun 2023 06:07:23 +0000 on http://localhost/ritude-wp
+0000.029 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.3 WP: 6.1.1 PHP: 7.4.27 (apache2handler, Windows NT SUNEEB 10.0 build 22621 (Windows 10) AMD64) MySQL: 10.4.22-MariaDB (max packet size=1073741824) WPLANG: en_US Server: Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27 safe_mode: 0 max_execution_time: 900 memory_limit: 100000M (used: 51.8M | 28M) multisite: N openssl: OpenSSL 1.1.1l  24 Aug 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.058 (0) Free space on disk containing Updraft's temporary directory: 112249 MB
+0000.091 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.133 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.257 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1686117291, seconds_ago=87152)
+0000.583 (0) Set semaphore last lock (fd) time to 2023-06-08 06:07:23
+0000.641 (0) Semaphore lock (fd) complete
+0000.837 (0) Backup run: resumption=0, nonce=ae966246bc6e, file_nonce=ae966246bc6e begun at=1686204443 (0s ago), job type=backup
+0001.016 (0) Scheduling a resumption (1) after 300 seconds (1686204744) in case this run gets aborted
+0001.304 (0) Checking if we have a zip executable available
+0001.617 (0) Creation of backups of directories: beginning
+0001.788 (0) No backup of plugins: excluded by user's options
+0001.837 (0) No backup of themes: excluded by user's options
+0001.912 (0) No backup of uploads: excluded by user's options
+0002.004 (0) No backup of others: excluded by user's options
+0002.395 (0) Saving backup status to database (elements: 0)
+0002.620 (0) Beginning creation of database dump (WordPress DB)
+0002.800 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0004.646 (0) Table wp9q_options: Total expected rows (via COUNT): 592
+0004.770 (0) Table wp9q_options: Rows added in this batch (next record: 183769): 588 (uncompressed bytes in this segment=1323617) in 0.36 seconds
+0005.074 (0) Table wp9q_options: finishing file(s) (2, 334.2 KB)
+0005.164 (0) Table wp9q_users: Total expected rows (via COUNT): 2
+0005.204 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.263 (0) Table wp9q_users: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1604) in 0.12 seconds
+0005.349 (0) Table wp9q_users: finishing file(s) (2, 0.7 KB)
+0005.446 (0) Table wp9q_usermeta: Total expected rows (via COUNT): 75
+0005.474 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.534 (0) Table wp9q_usermeta: Rows added in this batch (next record: 159): 75 (uncompressed bytes in this segment=5710) in 0.13 seconds
+0005.657 (0) Table wp9q_usermeta: finishing file(s) (2, 2.1 KB)
+0005.848 (0) Table wp9q_actionscheduler_actions: Total expected rows (via COUNT): 36
+0005.882 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.974 (0) Table wp9q_actionscheduler_actions: Rows added in this batch (next record: 152): 36 (uncompressed bytes in this segment=17018) in 0.20 seconds
+0006.233 (0) Table wp9q_actionscheduler_actions: finishing file(s) (2, 1.8 KB)
+0006.303 (0) Table wp9q_actionscheduler_claims: Total expected rows (via COUNT): 0
+0006.380 (0) Table wp9q_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=647) in 0.09 seconds
+0006.466 (0) Table wp9q_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0006.533 (0) Table wp9q_actionscheduler_groups: Total expected rows (via COUNT): 2
+0006.583 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0006.649 (0) Table wp9q_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=720) in 0.12 seconds
+0006.739 (0) Table wp9q_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0006.892 (0) Table wp9q_actionscheduler_logs: Total expected rows (via COUNT): 94
+0006.924 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.015 (0) Table wp9q_actionscheduler_logs: Rows added in this batch (next record: 430): 94 (uncompressed bytes in this segment=8814) in 0.13 seconds
+0007.258 (0) Table wp9q_actionscheduler_logs: finishing file(s) (2, 1.3 KB)
+0007.458 (0) Table wp9q_commentmeta: Total expected rows (via COUNT): 0
+0007.515 (0) Table wp9q_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=714) in 0.11 seconds
+0007.632 (0) Table wp9q_commentmeta: finishing file(s) (2, 0.4 KB)
+0007.761 (0) Table wp9q_comments: Total expected rows (via COUNT): 1
+0007.797 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.856 (0) Table wp9q_comments: Rows added in this batch (next record: 6): 1 (uncompressed bytes in this segment=2418) in 0.10 seconds
+0007.941 (0) Table wp9q_comments: finishing file(s) (2, 0.9 KB)
+0008.153 (0) Table wp9q_links: Total expected rows (via COUNT): 0
+0008.309 (0) Table wp9q_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1278) in 0.19 seconds
+0008.431 (0) Table wp9q_links: finishing file(s) (2, 0.5 KB)
+0008.815 (0) Table wp9q_postmeta: Total expected rows (approximate): 2058
+0008.958 (0) Table wp9q_postmeta: Rows added in this batch (next record: 3356): 2514 (uncompressed bytes in this segment=3049926) in 0.43 seconds
+0009.106 (0) Table wp9q_postmeta: finishing file(s) (2, 115.2 KB)
+0012.798 (0) Table wp9q_posts: Total expected rows (approximate): 1381
+0013.165 (0) Table wp9q_posts: Rows added in this batch (next record: 1659): 1409 (uncompressed bytes in this segment=19320631) in 4.00 seconds
+0013.316 (0) Table wp9q_posts: finishing file(s) (2, 1248.6 KB)
+0013.474 (0) Table wp9q_term_relationships: Total expected rows (approximate): 23
+0013.559 (0) Table wp9q_term_relationships: Rows added in this batch (next record: 100000): 23 (uncompressed bytes in this segment=1016) in 0.11 seconds
+0013.632 (0) Table wp9q_term_relationships: finishing file(s) (2, 0.5 KB)
+0013.748 (0) Table wp9q_term_taxonomy: Total expected rows (via COUNT): 5
+0013.774 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0013.833 (0) Table wp9q_term_taxonomy: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=1047) in 0.15 seconds
+0013.999 (0) Table wp9q_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0014.108 (0) Table wp9q_termmeta: Total expected rows (via COUNT): 0
+0014.158 (0) Table wp9q_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=669) in 0.11 seconds
+0014.258 (0) Table wp9q_termmeta: finishing file(s) (2, 0.4 KB)
+0014.358 (0) Table wp9q_terms: Total expected rows (via COUNT): 5
+0014.409 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0014.558 (0) Table wp9q_terms: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=910) in 0.20 seconds
+0014.649 (0) Table wp9q_terms: finishing file(s) (2, 0.5 KB)
+0014.794 (0) Table wp9q_ewwwio_images: Total expected rows (via COUNT): 130
+0014.824 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0014.877 (0) Table wp9q_ewwwio_images: Rows added in this batch (next record: 130): 130 (uncompressed bytes in this segment=24469) in 0.09 seconds
+0014.957 (0) Table wp9q_ewwwio_images: finishing file(s) (2, 4 KB)
+0015.097 (0) Table wp9q_ewwwio_queue: Total expected rows (via COUNT): 0
+0015.174 (0) Table wp9q_ewwwio_queue: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=647) in 0.08 seconds
+0015.283 (0) Table wp9q_ewwwio_queue: finishing file(s) (2, 0.4 KB)
+0015.461 (0) Table wp9q_loginizer_logs: Total expected rows (approximate): 0
+0015.607 (0) Table wp9q_loginizer_logs: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=613) in 0.15 seconds
+0015.683 (0) Table wp9q_loginizer_logs: finishing file(s) (2, 0.3 KB)
+0015.850 (0) Table wp9q_tm_taskmeta: Total expected rows (via COUNT): 0
+0015.900 (0) Table wp9q_tm_taskmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=669) in 0.08 seconds
+0016.009 (0) Table wp9q_tm_taskmeta: finishing file(s) (2, 0.4 KB)
+0016.124 (0) Table wp9q_tm_tasks: Total expected rows (via COUNT): 0
+0016.192 (0) Table wp9q_tm_tasks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=866) in 0.07 seconds
+0016.266 (0) Table wp9q_tm_tasks: finishing file(s) (2, 0.4 KB)
+0016.509 (0) Table wp9q_wpforms_tasks_meta: Total expected rows (via COUNT): 10
+0016.533 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.651 (0) Table wp9q_wpforms_tasks_meta: Rows added in this batch (next record: 35): 10 (uncompressed bytes in this segment=1465) in 0.25 seconds
+0016.808 (0) Table wp9q_wpforms_tasks_meta: finishing file(s) (2, 0.6 KB)
+0016.909 (0) Table wp9q_yoast_indexable: Total expected rows (via COUNT): 374
+0016.940 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0017.032 (0) Table wp9q_yoast_indexable: Rows added in this batch (next record: 493): 374 (uncompressed bytes in this segment=340778) in 0.17 seconds
+0017.149 (0) Table wp9q_yoast_indexable: finishing file(s) (2, 40.2 KB)
+0017.216 (0) Table wp9q_yoast_indexable_hierarchy: Total expected rows (approximate): 315
+0017.294 (0) Table wp9q_yoast_indexable_hierarchy: Rows added in this batch (next record: 1000): 315 (uncompressed bytes in this segment=6385) in 0.09 seconds
+0017.383 (0) Table wp9q_yoast_indexable_hierarchy: finishing file(s) (2, 1.4 KB)
+0017.633 (0) Table wp9q_yoast_migrations: Total expected rows (via COUNT): 23
+0017.701 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0017.793 (0) Table wp9q_yoast_migrations: Rows added in this batch (next record: 23): 23 (uncompressed bytes in this segment=1258) in 0.19 seconds
+0017.876 (0) Table wp9q_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0018.049 (0) Table wp9q_yoast_primary_term: Total expected rows (via COUNT): 0
+0018.118 (0) Table wp9q_yoast_primary_term: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=872) in 0.07 seconds
+0018.207 (0) Table wp9q_yoast_primary_term: finishing file(s) (2, 0.4 KB)
+0018.344 (0) Table wp9q_yoast_seo_links: Total expected rows (via COUNT): 309
+0018.384 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.448 (0) Table wp9q_yoast_seo_links: Rows added in this batch (next record: 1374): 309 (uncompressed bytes in this segment=42970) in 0.11 seconds
+0018.541 (0) Table wp9q_yoast_seo_links: finishing file(s) (2, 6.8 KB)
+0018.619 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_options.table.tmpr183770.gz (1/27/fopen): adding to final database dump
+0018.682 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_options.table.gz (2/27/fopen): adding to final database dump
+0018.749 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_users.table.tmpr3.gz (3/27/fopen): adding to final database dump
+0018.808 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_users.table.gz (4/27/fopen): adding to final database dump
+0018.835 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_usermeta.table.tmpr160.gz (5/27/fopen): adding to final database dump
+0018.866 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_usermeta.table.gz (6/27/fopen): adding to final database dump
+0018.893 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_actionscheduler_actions.table.tmpr153.gz (7/27/fopen): adding to final database dump
+0018.925 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_actionscheduler_actions.table.gz (8/27/fopen): adding to final database dump
+0018.952 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_actionscheduler_claims.table.tmpr0.gz (9/27/fopen): adding to final database dump
+0018.983 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_actionscheduler_claims.table.gz (10/27/fopen): adding to final database dump
+0019.010 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_actionscheduler_groups.table.tmpr3.gz (11/27/fopen): adding to final database dump
+0019.042 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_actionscheduler_groups.table.gz (12/27/fopen): adding to final database dump
+0019.068 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_actionscheduler_logs.table.tmpr431.gz (13/27/fopen): adding to final database dump
+0019.100 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_actionscheduler_logs.table.gz (14/27/fopen): adding to final database dump
+0019.127 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_commentmeta.table.tmpr0.gz (15/27/fopen): adding to final database dump
+0019.158 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_commentmeta.table.gz (16/27/fopen): adding to final database dump
+0019.185 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_comments.table.tmpr7.gz (17/27/fopen): adding to final database dump
+0019.216 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_comments.table.gz (18/27/fopen): adding to final database dump
+0019.243 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_links.table.tmpr0.gz (19/27/fopen): adding to final database dump
+0019.274 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_links.table.gz (20/27/fopen): adding to final database dump
+0019.335 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_postmeta.table.tmpr3357.gz (21/27/fopen): adding to final database dump
+0019.445 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_postmeta.table.gz (22/27/fopen): adding to final database dump
+0019.506 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_posts.table.tmpr1660.gz (23/27/fopen): adding to final database dump
+0019.589 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_posts.table.gz (24/27/fopen): adding to final database dump
+0019.660 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_term_relationships.table.tmpr100001.gz (25/27/fopen): adding to final database dump
+0019.708 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_term_relationships.table.gz (26/27/fopen): adding to final database dump
+0019.783 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_term_taxonomy.table.tmpr6.gz (27/27/fopen): adding to final database dump
+0019.810 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_term_taxonomy.table.gz (28/27/fopen): adding to final database dump
+0019.868 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_termmeta.table.tmpr0.gz (29/27/fopen): adding to final database dump
+0019.918 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_termmeta.table.gz (30/27/fopen): adding to final database dump
+0019.949 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_terms.table.tmpr6.gz (31/27/fopen): adding to final database dump
+0019.985 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_terms.table.gz (32/27/fopen): adding to final database dump
+0020.035 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_ewwwio_images.table.tmpr131.gz (33/27/fopen): adding to final database dump
+0020.066 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_ewwwio_images.table.gz (34/27/fopen): adding to final database dump
+0020.110 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_ewwwio_queue.table.tmpr0.gz (35/27/fopen): adding to final database dump
+0020.141 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_ewwwio_queue.table.gz (36/27/fopen): adding to final database dump
+0020.185 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_loginizer_logs.table.tmpr1.gz (37/27/fopen): adding to final database dump
+0020.215 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_loginizer_logs.table.gz (38/27/fopen): adding to final database dump
+0020.251 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_tm_taskmeta.table.tmpr0.gz (39/27/fopen): adding to final database dump
+0020.282 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_tm_taskmeta.table.gz (40/27/fopen): adding to final database dump
+0020.310 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_tm_tasks.table.tmpr0.gz (41/27/fopen): adding to final database dump
+0020.341 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_tm_tasks.table.gz (42/27/fopen): adding to final database dump
+0020.368 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_wpforms_tasks_meta.table.tmpr36.gz (43/27/fopen): adding to final database dump
+0020.399 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_wpforms_tasks_meta.table.gz (44/27/fopen): adding to final database dump
+0020.427 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_yoast_indexable.table.tmpr494.gz (45/27/fopen): adding to final database dump
+0020.458 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_yoast_indexable.table.gz (46/27/fopen): adding to final database dump
+0020.493 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_yoast_indexable_hierarchy.table.tmpr1001.gz (47/27/fopen): adding to final database dump
+0020.524 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_yoast_indexable_hierarchy.table.gz (48/27/fopen): adding to final database dump
+0020.552 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_yoast_migrations.table.tmpr24.gz (49/27/fopen): adding to final database dump
+0020.590 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_yoast_migrations.table.gz (50/27/fopen): adding to final database dump
+0020.618 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_yoast_primary_term.table.tmpr0.gz (51/27/fopen): adding to final database dump
+0020.657 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_yoast_primary_term.table.gz (52/27/fopen): adding to final database dump
+0020.790 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_yoast_seo_links.table.tmpr1375.gz (53/27/fopen): adding to final database dump
+0020.933 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db-table-wp9q_yoast_seo_links.table.gz (54/27/fopen): adding to final database dump
+0021.042 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db.gz: finished writing out complete database file (1763.8 KB)
+0021.227 (0) Total database tables backed up: 27 (backup_2023-06-08-0607_Ritude_ae966246bc6e-db.gz, size: 1806196, sha1: a194e465f1d6964afc9b625fc311762342746219, sha256: 11c3a64f11d99107f7961cd39203e94c469d0498624a4e3aefef635214efdad7)
+0021.360 (0) backup_2023-06-08-0607_Ritude_ae966246bc6e-db.gz: db: This file has not yet been successfully uploaded: will queue
+0021.390 (0) Saving backup history. Total backup size: 1.7 MB
+0021.457 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0021.545 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0021.574 (0) No remote despatch: user chose no remote backup service
+0021.603 (0) Recording as successfully uploaded: backup_2023-06-08-0607_Ritude_ae966246bc6e-db.gz
+0021.662 (0) Prune old backups from local store: nothing to do, since the user disabled local deletion and we are using local backups
+0021.690 (0) Resume backup (ae966246bc6e, 0): finish run
+0021.840 (0) Decremented the semaphore (fd) by 1
+0021.915 (0) Semaphore (fd) unlocked
+0022.124 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0022.211 (0) No email will/can be sent - the user has not configured an email address.
+0022.240 (0) The backup apparently succeeded and is now complete

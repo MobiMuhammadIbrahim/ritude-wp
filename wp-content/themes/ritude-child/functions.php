@@ -435,7 +435,7 @@ function create_homeslider_cpt() {
 		'description' => __( '', 'textdomain' ),
 		'labels' => $labels,
 		'menu_icon' => 'dashicons-admin-home',
-		'supports' => array('title', 'editor', 'thumbnail'),
+		'supports' => array('title', 'thumbnail'),
 		'taxonomies' => array(),
 		'public' => true,
 		'show_ui' => true,
@@ -835,6 +835,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
     $content_paragraph = get_field('content_paragraph');
     // $contact_us_url = get_field('contact_us_url');
     $cover_mobile_img = get_field('cover_mobile_image');
+	$animation_img = get_field('animation_img');
 
     $heading_tag = ($counter === 0) ? 'h1' : 'h2';
 
@@ -846,13 +847,15 @@ while ( $loop->have_posts() ) : $loop->the_post();
                         '<'.$heading_tag.'>'.$red_heading.'<span>'.$white_heading.'</span></'.$heading_tag.'>' .
                         '<img src="https://www.ritude.com/wp-content/uploads/2022/11/line.png" height="3" width="300" class="under_head_line">
                         <p>'.$content_paragraph.'</p>
+						<a href="https://www.ritude.com/contact-us/" class="red-btn">Contact Us</a>
                     </div>
-                    <a href="https://www.ritude.com/contact-us/" class="red-btn">Contact Us</a>
                     <div class="mobile_img">
                         <img src="'.$cover_mobile_img.'">
                     </div>
+						'.$animation_img.'
                 </div>
             </div>
+			
         </div>
     ';
     $counter++;
