@@ -1,9 +1,5 @@
-
-
-
 // // homeslider images animation js
-var $=jQuery;
-jQuery(document).ready(function () {
+jQuery(document).ready(function ($) {
   //Items
   var $card_box = $(".card_box");
   var $container_slider_1 = $(".container_slider_1");
@@ -169,7 +165,7 @@ jQuery(document).ready(function () {
 // home slider animation js end 
 
 
-jQuery(document).ready(function ($) {
+$(document).ready(function ($) {
   if (window.matchMedia('(max-width: 768px)').matches) {
     $('button#menu-toggler').on('click', function () {
       // Check if the navigation menu has the 'toggled' class
@@ -177,12 +173,10 @@ jQuery(document).ready(function ($) {
         // If the menu is toggled, show the primary-menu
         $('ul#primary-menu').css('opacity', '1');
         $('ul#primary-menu').css('visibility', 'visible');
-        $('body').css('overflow', 'hidden');
       } else {
         // If the menu is not toggled, hide the primary-menu
         $('ul#primary-menu').css('opacity', '0');
         $('ul#primary-menu').css('visibility', 'hidden');
-        $('body').css('overflow', 'auto');
       }
     });
   }
@@ -192,48 +186,32 @@ jQuery(function () {
   new WOW().init();
 });
 
-
-
 // ********************************************************* //
-// MAIN MENU fixed and sticky JQUERY START HERE //
+// MAIN MENU SLIDER JQUERY START HERE //
 // ********************************************************* //
-    // jQuery(window).on('scroll', function() {
-    //   var scroll = jQuery(window).scrollTop();
+    jQuery(window).scroll(function ($) {
+      var scroll = jQuery(window).scrollTop();
     
-    //   if (scroll >= 150) {
-        
-    // //jQuery(".custom_header_3456").removeClass("animate__animated")
-    //  // jQuery(".custom_header_3456").removeClass("animate__fadeOutUp")
+      if (scroll >= 150) {
+        jQuery(".custom_header_3456").css("top", "0");
+      } else {
+        jQuery(".custom_header_3456").css("top", "");
+      }
+    });
 
-    //  // jQuery(".custom_header_3456").addClass("animate__animated")
-    //   //jQuery(".custom_header_3456").addClass("animate__fadeInDown")
-      
-    //    // jQuery(".custom_header_3456").css("position", "fixed");
-    //     /*jQuery(".site-branding a img").css({
-    //       'transition' : 'all 0.4s ease-in-out',
-    //       'width' : '100px',
-    //       'height' : '43px'
-    //    });*/
-    //   } else {
-
-        
-    //   //jQuery(".custom_header_3456").removeClass("animate__animated")
-    //   //jQuery(".custom_header_3456").removeClass("animate__fadeInDown")
-
-    //   //jQuery(".custom_header_3456").addClass("animate__animated")
-    //   //jQuery(".custom_header_3456").addClass("animate__fadeOutUp")
-        
-    //     //jQuery(".custom_header_3456").addClass("animate__fadeOutUp")
-    //     //jQuery(".custom_header_3456").removeClass("animate__fadeInDown")
-    //     //jQuery(".custom_header_3456").css("position", "sticky");
-    //     //jQuery(".custom_header_3456").css("top", "");
-    //   /*  jQuery(".site-branding a img").css({
-    //       'transition' : 'all 0.4s ease-in-out',
-    //       'width' : '125px',
-    //       'height' : '50px'
-    //    });*/
-    //   }
-    // });
+$(document).ready(function () {
+  $("#menu-toggler").click(function () {
+    // setTimeout(() => {
+    if ($("#masthead nav.navbar").hasClass("toggled")) {
+      $(".custom_header_3456.fixed").css("top", "0");
+      $(".custom_header_3456.fixed").css("bottom", "0");
+    } else {
+      $(".custom_header_3456.fixed").css("top", "unset");
+      $(".custom_header_3456.fixed").css("bottom", "unset");
+    }
+    // }, 1000); 
+  });
+})
 
 
 // Toggle menu on click

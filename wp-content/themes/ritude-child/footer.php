@@ -42,8 +42,8 @@
 		</div>
 	</div>
 </footer>
-
 <?php wp_footer(); ?>
+
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/wow.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/bootstrap.min.js"></script>
@@ -51,13 +51,15 @@
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/owl.carousel.min.js"></script> 
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/slick.min.js"></script> 
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/custom_animation.js"></script>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/custom.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/custom.js" defer></script>
+
+
 <script type="text/javascript">
 	// // Preloader js code by sk 
-	// var loader = document.getElementById("preloader");
-	// window.addEventListener ("load", function() {
-	// 	loader.style.display = 'none';
-	// });
+	var loader = document.getElementById("preloader");
+	window.addEventListener ("load", function() {
+		loader.style.display = 'none';
+	});
 </script>
 </body>
 </html>

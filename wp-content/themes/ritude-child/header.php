@@ -28,6 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/custom_animation.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/fonts/Jost/stylesheet.css">
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery3.4.min.js"></script>
+
 	<?php wp_head(); ?>
 	<script type="text/javascript">
 	// Notice how this gets configured before we load Font Awesome
@@ -46,7 +47,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<!-- <div id="preloader"></div> -->
+<div id="preloader"></div>
 <div id="bottom_to_Top"><i class="fas fa-arrow-up"></i></div>
 <header id="masthead" class="site-header custom_header_3456" >
 	

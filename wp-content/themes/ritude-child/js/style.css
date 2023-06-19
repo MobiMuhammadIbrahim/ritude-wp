@@ -29,8 +29,6 @@ body.page .post-thumbnail {
 
 body {
     position: relative;
-    overflow-x: hidden;
-    background-color: #000;
 }
 
 .animated_background {
@@ -109,6 +107,10 @@ html {
     margin: 0 !important;
 }
 
+body {
+    overflow-x: hidden;
+    background-color: #000;
+}
 
 h1,
 h2,
@@ -193,7 +195,6 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     z-index: 9999999;
     background-size: 12%;
-    top: 0px;
 }
 
 /**===================================
@@ -682,8 +683,9 @@ li.contact_us_mobile {
     display: none !important;
 }
 
-/* umer style  */
+
 @media (min-width: 1281px) {
+
     .custom_header_3456 {
         background-color: #000000 !important;
         padding: 10px 0px;
@@ -693,13 +695,20 @@ li.contact_us_mobile {
         width: 100%;
         left: 0;
     }
+
     #page {
         margin-top: 102px;
     }
 
 }
-/* umer style  */
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
 @media (min-width: 1025px) and (max-width: 1280px) {
+
     .custom_header_3456 {
         background-color: #000000 !important;
         padding: 10px 0px;
@@ -709,14 +718,23 @@ li.contact_us_mobile {
         width: 100%;
         left: 0;
     }
+
     #page {
         margin-top: 102px;
     }
 
 
 }
-/* umer style  */
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
 @media (min-width: 768px) and (max-width: 1024px) {
+
+
     .custom_header_3456 {
         background-color: #000000 !important;
         padding: 10px 0px;
@@ -732,8 +750,15 @@ li.contact_us_mobile {
     }
 
 }
-/* umer style  */
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
     .custom_header_3456 {
         background-color: #000000 !important;
         padding: 10px 0px;
@@ -743,13 +768,18 @@ li.contact_us_mobile {
         width: 100%;
         left: 0;
     }
+
     #page {
         margin-top: 102px;
     }
 
 }
 
-/* umer style  */
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
 @media (min-width: 481px) and (max-width: 767px) {
 
 
@@ -769,7 +799,11 @@ li.contact_us_mobile {
 
 }
 
-/* umer style  */
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
 @media (min-width: 320px) and (max-width: 480px) {
 
     .custom_header_3456 {
@@ -787,8 +821,9 @@ li.contact_us_mobile {
     }
 
 }
-/* umer style  */
+
 @media (min-width: 200px) and (max-width: 319px) {
+
     .custom_header_3456 {
         background-color: #000000 !important;
         padding: 10px 0px;
@@ -798,9 +833,11 @@ li.contact_us_mobile {
         width: 100%;
         left: 0;
     }
+
     #page {
         margin-top: 102px;
     }
+
 }
 
 /**============================
