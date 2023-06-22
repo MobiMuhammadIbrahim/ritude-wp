@@ -1,4 +1,19 @@
 
+var selector = '#cus-faq-sec .vc_tta-panel';
+$('#cus-faq-sec .vc_tta-panel:nth-child(1)').addClass('active_faq');
+
+$(selector).on('click', function() {
+  var $this = $(this);
+  
+  if ($this.hasClass('active_faq')) {
+    $this.removeClass('active_faq');
+    $this.find('.vc_tta-panel-body').slideUp();
+  } else {
+    $(selector).removeClass('active_faq');
+    $this.addClass('active_faq');
+    $this.find('.vc_tta-panel-body').slideDown();
+  }
+});
 
 
 // // homeslider images animation js

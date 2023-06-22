@@ -440,6 +440,128 @@ ul#primary-menu>li.current-menu-item>a {
     color: #777777;
     text-decoration: underline;
 }
+/* faqs sectiuon style strat  */
+#cus-faq-sec {
+    color: white;
+}
+
+#cus-faq-sec .vc_tta-panel-title {
+    transition: all 1s;
+    position: relative;
+    cursor: pointer;
+}
+#cus-faq-sec .vc_tta-panel-title a  {
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+#cus-faq-sec .active_faq .vc_tta-panel-body {
+    display: block !important;
+    transition: padding .2s ease-in-out;
+}
+#cus-faq-sec .vc_tta-panel-body {
+    margin: 16px 0px 21px;
+    color: rgb(221, 221, 221);
+    border-top: 1px dashed !important;
+    padding-top: 10px;
+    display: none;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    transition: padding .2s ease-in-out;
+}
+#cus-faq-sec .vc_active .vc_tta-panel-body {
+    display: none;
+    overflow: hidden;
+} 
+.vc_tta-panel-heading {
+    margin-bottom: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 10px;
+}
+#cus-faq-sec .vc_tta-panel-heading, #cus-faq-sec .vc_tta-panel-body {
+    background-color: unset;
+    border: 0;
+}
+#cus-faq-sec .vc_tta-panel {
+    border-left: 3px solid rgb(239, 23, 65);
+    background-color: rgb(34, 34, 34) !important;
+    margin: 0 0 21.73913043px 0;
+}
+
+#cus-faq-sec .vc_tta-panel:hover {
+    background-color: rgb(50, 50, 50) !important;
+}
+div#cus-faq-sec .vc_tta-panel-heading>h4 a span {
+    display: block;
+    width: 94%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: white;
+    position: unset !important;
+    cursor: pointer;
+}
+
+#cus-faq-sec h4.vc_tta-panel-title a::before {
+    content: '';
+    background-image: url('img/plus_icon.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    position: absolute;
+    top: -10px;
+    transform: rotateZ(90deg);
+    right: 18px;
+    z-index: 99;
+    transition: all 0.5s;
+    height: 43px;
+    width: 19px;
+    background-color: unset;
+}
+
+#cus-faq-sec .active_faq  h4.vc_tta-panel-title a::before {
+    background-image: url(img/red_plus_icon.png);
+    transition: all 1s;
+    top: -11px;
+    transform: translateY(1px) rotateZ(-90deg);
+    overflow: hidden;
+    opacity: 0;
+}
+#cus-faq-sec .vc_tta-panel-heading {
+    cursor: pointer;
+}
+#cus-faq-sec .active_faq  h4.vc_tta-panel-title a::after {
+    opacity: 1;
+    transition: all 3s;
+}
+
+#cus-faq-sec h4.vc_tta-panel-title a::after {
+    content: '';
+    background-image: url('img/minus_white-icon.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    position: absolute;
+    top: -10px;
+    transform: rotateZ(0deg);
+    right: 18px;
+    height: 43px;
+    width: 19px;
+    background-color: unset;
+    opacity: 0;
+}
+#cus-faq-sec h4.vc_tta-panel-title a i {
+    display: none !important;
+}
+/* #cus-faq-sec .toggle_active_hide .vc_tta-panel-body {
+    display: block;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition: padding .2s ease-in-out;
+} */
 
 @media screen and (max-width: 768px) {
     .nav-menu .menu-item a {
@@ -1284,11 +1406,7 @@ div#our-partners .slick-arrow {
         width: 100%;
     }
 
-    /* faq style  start*/
-    div#cus-faq-sec .vc_toggle_title>h4 {
-        width: 90% !important;
-        font-size: 14px !important;
-    }
+    
 
     /* services pages global for mobile style start  */
     body .mob-mb-35 {
@@ -1998,90 +2116,6 @@ button.wpforms-submit:hover:before {
     padding-bottom: 10px;
 }
 
-.lisence_sec_six {
-    color: white;
-}
-
-.lisence_sec_six .vc_toggle_title {
-    margin-bottom: 10px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    transition: all 1s;
-    padding-left: 10px;
-    position: relative;
-}
-
-.lisence_sec_six .vc_toggle_content {
-    color: rgb(221, 221, 221);
-    border-top: 1px dashed;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.lisence_sec_six .vc_toggle {
-    border-left: 3px solid rgb(239, 23, 65);
-    background-color: rgb(34, 34, 34) !important;
-}
-
-.lisence_sec_six .vc_toggle:hover {
-    background-color: rgb(50, 50, 50) !important;
-}
-
-/* faqs section style */
-
-#cus-faq-sec i.vc_toggle_icon {
-    position: absolute !important;
-    right: 16px !important;
-    transform: scale(2);
-    top: 0px;
-}
-
-#cus-faq-sec i.vc_toggle_icon::after {
-    content: '';
-    background-image: url('img/minus_white-icon.png');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-    transform: rotate(0deg);
-    top: 17px;
-    left: 13px;
-    opacity: 0;
-}
-
-#cus-faq-sec .vc_toggle_arrow.vc_toggle_active .vc_toggle_icon::after {
-    opacity: 1;
-    transition: all 3s;
-}
-
-#cus-faq-sec i.vc_toggle_icon::before {
-    content: '';
-    background-image: url('img/plus_icon.png');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 0;
-    position: absolute;
-    top: 21px;
-    transform: rotateZ(90deg);
-    left: 13px;
-    transition: all 0.5s;
-}
-
-#cus-faq-sec .vc_toggle_arrow.vc_toggle_active .vc_toggle_icon::before {
-    background-image: url('img/red_plus_icon.png');
-    transition: all 0.5s;
-    top: 21px;
-    transform: translateY(1px) rotateZ(-90deg);
-    overflow: hidden;
-}
-
-div#cus-faq-sec .vc_toggle_title>h4 {
-    display: block;
-    width: 94%;
-    font-size: 20px;
-}
 
 @media (max-width: 768px) {
     #preloader {
@@ -2125,7 +2159,7 @@ div#cus-faq-sec .vc_toggle_title>h4 {
         opacity: 1;
         overflow: unset;
         visibility: visible;
-        transition: all 1s;
+        transition: all 0.4s;
 
     }
 
@@ -2137,7 +2171,7 @@ div#cus-faq-sec .vc_toggle_title>h4 {
         top: auto;
         max-height: 0;
         overflow: hidden;
-        transition: all 1s;
+        transition: all 0.4s;
     }
 
     header#masthead .menu li.menu-item-has-children.focus a:before {
@@ -2166,14 +2200,10 @@ div#cus-faq-sec .vc_toggle_title>h4 {
 }
 
 @media (max-width: 480px) {
-    div#cus-faq-sec .vc_toggle_title>h4 {
-        line-height: inherit;
+    div#cus-faq-sec .vc_tta-panel-heading>h4 a span{
         width: 80% !important;
-        font-size: 12px !important;
-    }
-
-    #cus-faq-sec i.vc_toggle_icon {
-        transform: scale(2);
+        font-size: 16px !important;
+        line-height: 20px;
     }
 
     .homepage_services_boxes_row {
@@ -2306,9 +2336,7 @@ div#cus-faq-sec .vc_toggle_title>h4 {
 
 
 @media only screen and (max-width: 767px) {
-    /* .push-left {
-        padding: 10px !important;
-    } */
+    
 
     .head-wrap {
         justify-content: center;
@@ -2894,6 +2922,18 @@ div#bottom_to_Top i {
 }
 
 @media (max-width: 767px) {
+    div#cus-faq-sec .vc_tta-panel-heading>h4 a span {
+        text-transform: capitalize !important;
+    }
+    #cus-faq-sec h4.vc_tta-panel-title a::before, #cus-faq-sec h4.vc_tta-panel-title a::after {
+        top: -1px;
+        height: 30px;
+        width: 13px;
+        right: 12px;
+    }
+    #cus-faq-sec .vc_active h4.vc_tta-panel-title a::before {
+        top: -1px;
+    }
     .responsive-img-hide {
         display: block;
         margin-bottom: 0px !important;
@@ -3079,6 +3119,15 @@ div#bottom_to_Top i {
 }
 
 @media (max-width: 500px) {
+    /* #cus-faq-sec h4.vc_tta-panel-title a::before, #cus-faq-sec h4.vc_tta-panel-title a::after {
+        top: -1px;
+        height: 30px;
+        width: 13px;
+        right: 12px;
+    } */
+    /* #cus-faq-sec .vc_active h4.vc_tta-panel-title a::before {
+        top: -1px;
+    } */
     #preloader {
         background-size: 30%;
     }
@@ -3122,14 +3171,11 @@ div#bottom_to_Top i {
         padding-left: 30px !important;
     }
 
-    #cus-faq-sec i.vc_toggle_icon {
-        right: 10px !important;
-        transform: scale(1.5);
-    }
+    
 
     body p,
     .heading p {
-        font-size: 14px !important;
+        font-size: 16px !important;
         line-height: 22px !important;
         text-align: left !important;
     }
@@ -3150,10 +3196,7 @@ div#bottom_to_Top i {
         text-align: left !important;
     }
 
-    div#cus-faq-sec .vc_toggle_title {
-        padding-left: 10px;
-    }
-
+    
     .page-id-774 section.red-contact-sec .vc_btn3-container,
     .page-id-772 section.red-contact-sec .vc_btn3-container {
         margin-bottom: 0px;
